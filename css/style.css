@@ -9,13 +9,13 @@ body {
 .navbar {
   background-color: #fff;
   color: #fff;
-  padding: 10px 0;
+  padding: 0.625rem 0;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 1.25rem;
 }
 
 .navbar__menu {
@@ -25,23 +25,37 @@ body {
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 15px;
+  gap: 0.9375rem;
 }
-
-.navbar__menu li {
-  margin-right: 20px;
+.navbar__icon {
+  margin-right: -0.5313rem;
 }
-
 .navbar__link {
   color: rgb(93, 108, 123);
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
-  line-height: 17px;
+  line-height: 1.0625rem;
   text-decoration: none;
   transition: 0.3s;
+}
+.navbar__menu li:last-child {
+  margin-left: auto;
 }
 
 .navbar__link:hover {
   text-decoration: underline;
 }
 
+.navbar__phone {
+  color: rgb(40, 39, 57);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+}
+.outline_border {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ecf3ff;
+}
