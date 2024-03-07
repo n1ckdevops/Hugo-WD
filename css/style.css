@@ -168,12 +168,14 @@ header {
   font-size: 20px;
   font-weight: 400;
   line-height: 29px;
+  margin-bottom: 30px;
 }
 
 .header__block__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+
 }
 
 .header-button {
@@ -203,6 +205,14 @@ header {
 
 .header-svg {
   position: absolute;
-  filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1) !important;
   z-index: 1;
+}
+.header__list {
+  columns: 2;
+}
+.header__list__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
