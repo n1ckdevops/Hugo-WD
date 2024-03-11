@@ -10,7 +10,7 @@ body {
 }
 .main-container {
   position: relative;
-  width: 1440px;
+  width: 90rem;
   margin: auto;
   border: 1px solid black;
 }
@@ -422,7 +422,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 25px;
+  grid-column-gap: 15px;
   grid-row-gap: 0px;
   margin-bottom: 20px;
 }
@@ -433,3 +433,67 @@ header {
 .div2 {
   grid-area: 1 / 2 / 2 / 3;
 }
+
+/* CTA */
+.cta {
+  position: relative;
+  width: 86.25rem;
+  height: 27.8125rem;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: rgb(244, 247, 251);
+  margin-bottom: 100px;
+}
+.cta,
+.cta * {
+  /* border: 1px solid red; */
+}
+.cta-title {
+  max-width: 38.3125rem;
+  margin-bottom: 2.5rem;
+}
+.cta-text {
+  color: rgb(40, 39, 57);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.cta-form {
+  margin-top: 1.25rem;
+}
+.cta-input {
+  padding: 15px 25px;
+  border: 1px solid rgb(234, 235, 237);
+  border-radius: 5px;
+  width: 263px;
+  margin-right: 20px;
+}
+
+.cta-button {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 13px 25px;
+  border-radius: 5px;
+  background: rgb(111, 115, 238);
+  color: #fff;
+  border: none;
+}
+
+.cta-wrapper {
+  padding-top: 5.5rem;
+}
+
+.cta-bg {
+  position: absolute;
+  bottom: -104px;
+  right: 182px;
+  clip: rect(6px, 500px, 502px, 0px);
+}
+
+
+
+
