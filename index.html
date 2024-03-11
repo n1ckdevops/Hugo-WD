@@ -462,22 +462,20 @@
               >Оставьте заявку, и менеджер подберет нужный самокат</span
             >
             <form action="#" class="cta-form">
-              <input type="text" class="cta-input" />
+              <input
+                type="text"
+                class="cta-input phone-mask"
+                placeholder="+ 7 ( _ _ _ ) _ _ - _ _ - _ _ "
+              />
               <button class="cta-button">Оставить заявку на тест-драйв</button>
             </form>
             <div class="politics">
-              <!-- <label>
-                <input type="checkbox" name="example_checkbox" />
-                
-              </label> -->
-
               <label>
                 <!-- Скрытый стандартный флажок -->
-                <input type="checkbox" class="checkbox-input">
+                <input type="checkbox" class="checkbox-input" />
                 <!-- Изображение-замена -->
                 <span class="custom-checkbox"></span>
-                Checkbox Label
-            </label>
+              </label>
               <span class="politics-text"
                 >Нажимая на кнопку, вы соглашаетесь на обработку персональных
                 данных и <a href="#">политикой конфиденциальности</a></span
@@ -486,6 +484,25 @@
           </div>
 
           <img src="img/cta-bg.png" alt="happy woman" class="cta-bg" />
+        </div>
+      </section>
+
+      <section class="discount">
+        <div class="container">
+          <div class="discount-wrapper">
+            <h2 class="discount-title">
+              Оставьте свою почту и станьте первым, кто получит скидку на новые
+              самокаты
+            </h2>
+            <form action="POST" class="email-form">
+              <input
+                type="email"
+                class="email-form__input"
+                placeholder="Введите Ваш email"
+              />
+              <button class="subscribe">Подписаться</button>
+            </form>
+          </div>
         </div>
       </section>
       <script src="js/main.js"></script>
