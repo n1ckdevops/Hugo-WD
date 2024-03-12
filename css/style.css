@@ -8,12 +8,13 @@
 body {
   font-family: "Jost", sans-serif;
 }
-/* .main-container {
-  position: relative;
-  width: 90rem;
+.main-container {
+  /* position: relative; */
+  max-width: 90rem;
   margin: auto;
+  padding: 0 30px;
   border: 1px solid black;
-} */
+}
 button {
   cursor: pointer;
 }
@@ -142,19 +143,21 @@ input:focus {
 header {
   margin-top: 41px;
   position: relative;
-  height: 28.125rem;
+  height: 27.8125rem;
 }
 
 .container-header {
   position: relative;
 }
 .header__bg {
-  max-width: 86.25rem;
-  height: auto;
+  background-image: url(../img/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 86.25rem;
+  height: 100%;
   position: absolute;
-  left: -124px;
   border-radius: 10px;
-  margin-bottom: 72px;
 }
 .wrapper__header {
   position: absolute;
@@ -175,9 +178,9 @@ header {
   margin-bottom: 20px;
 }
 .section-title {
-  font-size: 35px;
+  font-size: 2.1875rem;
   font-weight: 600;
-  line-height: 51px;
+  line-height: 3.1875rem;
   text-transform: uppercase;
   margin-bottom: 14px;
   margin-top: 0;
@@ -238,17 +241,25 @@ header {
 
 /* SECOND SECTION */
 
-.container-second {
-  max-width: unset;
+.second {
+  margin-top: 4.1875rem;
 }
 
 .second-wrapper {
+  position: relative;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  gap: 99px;
+  justify-content: flex-end;
+  gap: 9.0625rem;
 }
-
+.section-two__bg {
+  background-image: url(../img/test_drive-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 32.1875rem;
+  height: 26.375rem;
+}
 .flex-one {
   max-width: 37.0125rem;
 }
@@ -275,20 +286,25 @@ header {
 }
 
 .second-title {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 /* THIRD SECTION */
 
 .third {
-  margin-top: 132px;
-  margin-left: 245px;
+  margin-top: 6.25rem;
 }
 
 .second-wrapper.third-wrapper {
   flex-direction: row-reverse;
 }
-
+.section-two__bg2 {
+  background-image: url(../img/safety-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 32.1875rem;
+  height: 28.9375rem;
+}
 /* scooters */
 .scooters {
   margin-top: 100px;
@@ -493,9 +509,15 @@ header {
 }
 
 .cta-bg {
+  background-image: url(../img/cta-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  width: 25.625rem;
+  height: 37.9375rem;
   position: absolute;
-  bottom: -102px;
-  right: 175px;
+  bottom: -6.5625rem;
+  right: 13.75rem;
   clip: rect(6px, 500px, 502px, 0px);
 }
 
@@ -627,10 +649,15 @@ button {
   line-height: 17px;
 }
 
-
 .socials-wrapper {
   display: flex;
   justify-content: space-between;
   padding-top: 2.2813rem;
   padding-bottom: 2.6rem;
+}
+
+@media (max-width: 1440px) {
+  .header__bg {
+    width: 100%;
+  }
 }
