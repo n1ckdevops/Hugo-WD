@@ -585,7 +585,6 @@ button {
 /* FOOTER */
 .footer-section {
   padding-top: 2.9375rem;
-  padding-bottom: 4.6875rem;
 }
 
 .footer-wrapper * {
@@ -595,6 +594,7 @@ button {
 .footer-wrapper {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 47px;
 }
 .ul-customers,
 .ul-contacts {
@@ -626,8 +626,11 @@ button {
   font-weight: 400;
   line-height: 17px;
 }
-.ul-catalog__item .ul-catalog {
-}
 
-.ul-customers {
+
+.socials-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.2813rem;
+  padding-bottom: 2.6rem;
 }
