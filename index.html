@@ -20,86 +20,99 @@
   <body>
     <nav class="navbar">
       <div class="container">
-        <ul class="navbar__menu">
-          <li><a href="#" class="navbar__link">Сервис</a></li>
-          <li><a href="#" class="navbar__link">Сотрудничество</a></li>
-          <li><a href="#" class="navbar__link">Заказать звонок</a></li>
-          <li>
-            <img src="img/icons/viber.svg" class="navbar__icon" alt="Viber" />
-          </li>
-          <li>
-            <img
-              src="img/icons/whatsapp.svg"
-              class="navbar__icon"
-              alt="Whatsapp"
-            />
-          </li>
-          <li>
-            <img
-              src="img/icons/telegram.svg"
-              class="navbar__icon"
-              alt="Telegram"
-            />
-          </li>
-          <li>
-            <a href="tel:+78005055461" class="navbar__link navbar__phone"
-              >+7 (800) 505-54-61</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="outline_border"></div>
-    <section class="section search">
-      <div class="container">
-        <div class="wrapper__search">
-          <span class="search__text">Kugoo</span>
-          <button class="button button__catalog">
-            <img src="img/icons/catalog_lines.png" alt="" />
-            Каталог
-          </button>
-          <div class="search__container">
-            <input
-              type="text"
-              class="search__input"
-              placeholder="Искать самокат KUGO"
-            />
-            <button class="button button__search">
-              <img
-                src="img/icons/search.svg"
-                alt="Search"
-                class="search__icon"
-              />
-            </button>
-          </div>
-          <div class="extra__icons">
-            <a href="#" class="extra__icon">
-              <img
-                src="img/icons/scales.svg"
-                class="extra__icon__icon"
-                alt="scales"
-              />
-            </a>
-            <a href="#" class="extra__icon">
-              <img
-                src="img/icons/heart.svg"
-                class="extra__icon__icon"
-                alt="heart"
-              />
-            </a>
-            <a href="#" class="extra__icon">
-              <img
-                src="img/icons/cart.svg"
-                class="extra__icon__icon"
-                alt="cart"
-              />
-            </a>
-          </div>
-          <a href="#" class="cart">Корзина</a>
+          <ul class="navbar__menu">
+            <li><a href="#" class="navbar__link">Сервис</a></li>
+            <li><a href="#" class="navbar__link">Сотрудничество</a></li>
+            <li><a href="#" class="navbar__link">Заказать звонок</a></li>
+
+            <div class="socials-nav">
+              <li>
+                <a href="#"
+                  ><img
+                    src="img/icons/viber.svg"
+                    class="navbar__icon"
+                    alt="Viber"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="img/icons/whatsapp.svg"
+                    class="navbar__icon"
+                    alt="Whatsapp"
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    src="img/icons/telegram.svg"
+                    class="navbar__icon"
+                    alt="Telegram"
+                /></a>
+              </li>
+            </div>
+
+            <li>
+              <a href="tel:+78005055461" class="navbar__link navbar__phone"
+                >+7 (800) 505-54-61</a
+              >
+            </li>
+          </ul>
+        </nav>
         </div>
-      </div>
-    </section>
+    </div>
+    <div class="outline_border"></div>
     <div class="main-container">
+      <section class="section search">
+        <div class="container">
+          <div class="wrapper__search">
+            <span class="search__text">Kugoo</span>
+            <button class="button button__catalog">
+              <img src="img/icons/catalog_lines.png" alt="" />
+              Каталог
+            </button>
+            <div class="search__container">
+              <input
+                type="text"
+                class="search__input"
+                placeholder="Искать самокат KUGO"
+              />
+              <button class="button button__search">
+                <img
+                  src="img/icons/search.svg"
+                  alt="Search"
+                  class="search__icon"
+                />
+              </button>
+            </div>
+            <div class="extra__icons">
+              <a href="#" class="extra__icon">
+                <img
+                  src="img/icons/scales.svg"
+                  class="extra__icon__icon"
+                  alt="scales"
+                />
+              </a>
+              <a href="#" class="extra__icon">
+                <img
+                  src="img/icons/heart.svg"
+                  class="extra__icon__icon"
+                  alt="heart"
+                />
+              </a>
+              <a href="#" class="extra__icon">
+                <img
+                  src="img/icons/cart.svg"
+                  class="extra__icon__icon"
+                  alt="cart"
+                />
+              </a>
+              <a href="#" class="cart">Корзина</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <header class="test__header">
         <div class="header__bg"></div>
         <div class="container container-header">
@@ -123,8 +136,8 @@
                   />
                 </div>
                 <span class="header__block__text"
-                  >Поймете, какая <br />
-                  модель вам <br />подходит</span
+                  >Поймете, какая <br> 
+                  модель вам подходит</span
                 >
               </li>
 
@@ -137,8 +150,8 @@
                   />
                 </div>
                 <span class="header__block__text"
-                  >Проверите <br />
-                  лучшие самокаты <br />
+                  >Проверите
+                  лучшие <br />самокаты 
                   в деле</span
                 >
               </li>
@@ -485,8 +498,6 @@
           <div class="cta-bg"></div>
         </div>
       </section>
-    </div>
-    <div class="main-container2">
       <section class="discount">
         <div class="container">
           <div class="discount-wrapper">
@@ -572,19 +583,39 @@
               <a href="#" class="politics-text">Политика конфиденциальности</a>
             </div>
             <div class="payment-two">
-              <a href="#" class="payment-method"><img src="img/google-pay.png" alt="google-pay"/></a>
-              <a href="#" class="payment-method"><img src="img/apple-pay.png" alt="apple-pay" /></a>
-              <a href="#" class="payment-method"><img src="img/visa.png" alt="visa" /></a>
-              <a href="#" class="payment-method"><img src="img/mastercard.png" alt="masteracard" /></a>
-              <a href="#" class="payment-method"><img src="img/mastercard2.png" alt="mastercard2" /></a>
-              <a href="#" class="payment-method"><img src="img/webmoney.png" alt="webmoney"/></a>
-              <a href="#" class="payment-method"><img src="img/qiwi.png" alt="qiwi"/></a>
+              <a href="#" class="payment-method"
+                ><img src="img/google-pay.png" alt="google-pay"
+              /></a>
+              <a href="#" class="payment-method"
+                ><img src="img/apple-pay.png" alt="apple-pay"
+              /></a>
+              <a href="#" class="payment-method"
+                ><img src="img/visa.png" alt="visa"
+              /></a>
+              <a href="#" class="payment-method"
+                ><img src="img/mastercard.png" alt="masteracard"
+              /></a>
+              <a href="#" class="payment-method"
+                ><img src="img/mastercard2.png" alt="mastercard2"
+              /></a>
+              <a href="#" class="payment-method"
+                ><img src="img/webmoney.png" alt="webmoney"
+              /></a>
+              <a href="#" class="payment-method"
+                ><img src="img/qiwi.png" alt="qiwi"
+              /></a>
             </div>
             <div class="payment-three">
               <span>Online чат:</span>
-              <a href="#"><img src="img/icons/viber-footer.svg" alt="viber" /></a>
-              <a href="#"><img src="img/icons/whatsapp-footer.svg" alt="whatsapp" /></a>
-              <a href="#"><img src="img/icons/telegram-footer.svg" alt="telegram" /></a>
+              <a href="#"
+                ><img src="img/icons/viber-footer.svg" alt="viber"
+              /></a>
+              <a href="#"
+                ><img src="img/icons/whatsapp-footer.svg" alt="whatsapp"
+              /></a>
+              <a href="#"
+                ><img src="img/icons/telegram-footer.svg" alt="telegram"
+              /></a>
             </div>
           </div>
         </div>

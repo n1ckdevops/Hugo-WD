@@ -2,18 +2,17 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  /* border: 1px solid pink; */
 }
 
 body {
   font-family: "Jost", sans-serif;
 }
 .main-container {
-  /* position: relative; */
   max-width: 90rem;
   margin: auto;
-  padding: 0 30px;
-  /* border: 1px solid black; */
+  padding: 0 24px;
+  border: 1px solid black;
+  border-top: none;
 }
 button {
   cursor: pointer;
@@ -41,10 +40,14 @@ input:focus {
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 1.8375rem;
+  gap: 1.92rem;
 }
+.socials-nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
 .navbar__icon {
-  margin-right: -0.5313rem;
 }
 .navbar__link {
   color: rgb(93, 108, 123);
@@ -65,7 +68,7 @@ input:focus {
 .navbar__phone {
   color: rgb(40, 39, 57);
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.0625rem;
 }
 .outline_border {
@@ -78,13 +81,12 @@ input:focus {
 
 /* SEARCH SECTION */
 .search {
-  margin-top: 1.875rem;
+  margin-top: 1.675rem;
 }
 .wrapper__search {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 0.9375rem;
+  /* gap: 2.3375rem; */
 }
 
 .search__text {
@@ -106,12 +108,20 @@ input:focus {
   border: none;
   padding: 9px 20px;
   color: #fff;
+  margin-left: 36px;
+  margin-right: 39px;
 }
 
 .search__container {
   position: relative;
 }
+.search__container input {
+  color: rgb(93, 108, 123);
 
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
 .search__input {
   position: relative;
   padding: 10px 20px;
@@ -119,6 +129,7 @@ input:focus {
   height: 2.5rem;
   border: 1.5px solid rgb(111, 115, 238);
   border-radius: 5px;
+  margin-left: -17px;
 }
 .button__search {
   position: absolute;
@@ -135,7 +146,7 @@ input:focus {
 .cart {
   color: rgb(40, 39, 57);
   font-size: 0.875rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 20px;
 }
 
@@ -162,7 +173,7 @@ header {
 .wrapper__header {
   position: absolute;
   top: 0;
-  padding-top: 57px;
+  padding-top: 55px;
 }
 
 .wrapper__header * {
@@ -172,17 +183,21 @@ header {
 }
 
 .header__address {
+  display: flex;
+  align-items: center;
   font-size: 12px;
   font-weight: 400;
   line-height: 17px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+  gap: 10px;
+  letter-spacing: 0.2px;
 }
 .section-title {
   font-size: 2.1875rem;
   font-weight: 600;
   line-height: 3.1875rem;
   text-transform: uppercase;
-  margin-bottom: 14px;
+  margin-bottom: 7px;
   margin-top: 0;
 }
 
@@ -191,10 +206,10 @@ header {
 }
 
 .header__text {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
   line-height: 29px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .header__block__text {
@@ -202,7 +217,11 @@ header {
   font-weight: 400;
   line-height: 18px;
 }
-
+.extra__icons {
+  display: flex;
+  gap: 23px;
+  margin-left: 2.875rem;
+}
 .header-button {
   border: 1.3px solid rgb(255, 255, 255);
   border-radius: 5px;
@@ -212,7 +231,7 @@ header {
   font-weight: 400;
   line-height: 23px;
   padding: 15px 40px;
-  margin-top: 22px;
+  margin-top: 35px;
   cursor: pointer;
 }
 
@@ -222,7 +241,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 40px;
-  height: 40px;
+  height: 42.7px;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.2);
   z-index: 0;
@@ -231,12 +250,12 @@ header {
 .header__list {
   display: flex;
   columns: 2;
-  gap: 35px;
+  gap: 48px;
 }
 .header__list__item {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 18px;
 }
 
 /* SECOND SECTION */
@@ -458,7 +477,7 @@ header {
 /* CTA */
 .cta {
   position: relative;
-  width: 86.25rem;
+  width: 100%;
   height: 27.8125rem;
   margin: 0 auto;
   border-radius: 10px;
@@ -567,7 +586,6 @@ header {
 
 .email-form input,
 button {
-  height: 53px;
 }
 
 .email-form input {
@@ -631,7 +649,7 @@ button {
 .ul-customers li,
 .ul-contacts li {
   margin-bottom: 10px;
-  font-size: .875rem;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 20px;
   color: rgb(93, 108, 123);
@@ -713,7 +731,7 @@ button {
 
 .payment-three span {
   color: rgb(40, 39, 57);
-  font-size: .875rem;
+  font-size: 0.875rem;
   font-weight: 400;
   line-height: 20px;
 }
