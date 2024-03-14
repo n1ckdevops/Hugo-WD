@@ -10,8 +10,8 @@ body {
 .main-container {
   max-width: 90rem;
   margin: auto;
-  padding: 0 24px;
-  border: 1px solid black;
+  padding: 0 34px;
+  /* border: 1px solid black; */
   border-top: none;
 }
 button {
@@ -267,9 +267,8 @@ header {
 .second-wrapper {
   position: relative;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: flex-end;
-  gap: 9.0625rem;
 }
 .section-two__bg {
   background-image: url(../img/test_drive-bg.png);
@@ -280,7 +279,7 @@ header {
   height: 26.375rem;
 }
 .flex-one {
-  max-width: 37.0125rem;
+  flex-basis: 53.3%;
 }
 
 .test-drive {
@@ -298,14 +297,15 @@ header {
 }
 
 .ul-name {
-  margin-bottom: 15px;
-  font-size: 20px;
+  margin-bottom: 0.9375rem;
+  font-size: 1.25rem;
   font-weight: 500;
   line-height: 29px;
 }
 
 .second-title {
-  margin-bottom: 2.5rem;
+  padding-top: 31px;
+  padding-bottom: 21px;
 }
 
 /* THIRD SECTION */
@@ -313,9 +313,9 @@ header {
 .third {
   margin-top: 6.25rem;
 }
-
 .second-wrapper.third-wrapper {
   flex-direction: row-reverse;
+  column-gap: 5.3125rem;
 }
 .section-two__bg2 {
   background-image: url(../img/safety-bg.png);
@@ -326,20 +326,21 @@ header {
 }
 /* scooters */
 .scooters {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 6.25rem;
+  margin-bottom: 6.25rem;
 }
-
+.third-text__block {
+  flex-basis: 48px;
+  flex: 1;
+}
 .scooters-title {
-  max-width: 732px;
   margin: 0 auto;
-  margin-bottom: 57px;
+  margin-bottom: 3.3625rem;
   text-align: center;
 }
 .scooter-cards {
   display: flex;
-  justify-content: center;
-  gap: 33px;
+  gap: 1.8125rem;
 }
 .scooter-card {
   position: relative;
@@ -354,11 +355,11 @@ header {
   background-color: rgb(240, 241, 245);
 }
 .scooter-card__img .scooter-img {
-  width: 100%;
+  width: 245px;
   height: 100%;
   object-fit: cover;
   padding-top: 28px;
-  padding-bottom: 28px;
+  padding-bottom: 14px;
 }
 
 .scooter-card__img .red {
@@ -404,12 +405,13 @@ header {
 .scooter-card__info {
   padding: 0;
   columns: 2;
+  column-gap: 19px;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
   color: rgb(93, 108, 123);
-  margin-top: 25px;
+  margin-top: 21px;
   margin-bottom: 25px;
 }
 
@@ -464,7 +466,7 @@ header {
   grid-template-rows: 1fr;
   grid-column-gap: 15px;
   grid-row-gap: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 }
 
 .div1 {
@@ -490,13 +492,14 @@ header {
 }
 .cta-title {
   max-width: 38.3125rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.1rem;
 }
 .cta-text {
   color: rgb(40, 39, 57);
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 23px;
+  letter-spacing: 0.0187rem;
 }
 
 .cta-form {
@@ -507,16 +510,16 @@ header {
   border: 1px solid rgb(234, 235, 237);
   border-radius: 5px;
   width: 263px;
-  margin-right: 20px;
+  margin-right: 16px;
 }
 
 .cta-button {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 23px;
   letter-spacing: 0%;
   text-align: center;
-  padding: 13px 25px;
+  padding: 14px 25px;
   border-radius: 5px;
   background: rgb(111, 115, 238);
   color: #fff;
@@ -535,16 +538,16 @@ header {
   width: 25.625rem;
   height: 37.9375rem;
   position: absolute;
-  bottom: -6.5625rem;
-  right: 13.75rem;
+  bottom: -6.3625rem;
+  right: 11.25rem;
   clip: rect(6px, 500px, 502px, 0px);
 }
 
 .politics {
   display: flex;
-  margin-top: 23px;
+  margin-top: 21px;
   max-width: 20.9375rem;
-  gap: 12px;
+  gap: 15px;
 }
 
 .politics span {
@@ -564,8 +567,14 @@ header {
 
 /* DISCOUNT */
 
+.footer-container {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .discount {
-  padding: 24px 0;
+  padding: 22px 0;
   margin: 0;
   background: rgb(111, 115, 238);
 }
@@ -584,19 +593,18 @@ header {
   margin: 0;
 }
 
-.email-form input,
-button {
+.email-form {
+  margin-right: 10px;
 }
 
 .email-form input {
   width: 25.625rem;
-  padding: 15px 25px;
+  padding: 17px 25px;
   border-radius: 5px;
-  /* Purple */
   background: rgb(154 157 237);
   color: #fff;
   border: none;
-  margin-right: 1.25rem;
+  margin-right: 0.95rem;
 }
 
 .email-form__input::placeholder {
@@ -609,7 +617,7 @@ button {
 
 .email-form button {
   max-width: 8.75rem;
-  padding: 15px 25px;
+  padding: 14px 25px;
   border-radius: 5px;
   /* White */
   background: rgb(255, 255, 255);
@@ -635,15 +643,19 @@ button {
 .footer-wrapper {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 47px;
+  padding-bottom: 3.9375rem;
 }
 .ul-customers,
 .ul-contacts {
   columns: 2;
-  column-gap: 35px;
+  column-gap: 2.7875rem;
 }
 .footer-wrapper h3 {
   margin-bottom: 1.1875rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.3px;
 }
 .ul-catalog li,
 .ul-customers li,
@@ -655,6 +667,11 @@ button {
   color: rgb(93, 108, 123);
 }
 
+.footer-column:nth-child(2) {
+  margin-left: 29px;
+}
+.footer-column:nth-child(3) {
+}
 .ul-contacts a {
   color: rgb(40, 39, 57);
   font-size: 1rem;
@@ -664,7 +681,7 @@ button {
 .footer-call {
   color: rgb(111, 115, 238);
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 17px;
 }
 
@@ -682,14 +699,15 @@ button {
 
 .socials-wrapper2 {
   display: flex;
-  padding-top: 2.2813rem;
-  padding-bottom: 2.6rem;
+  padding-top: 2.1813rem;
+  padding-bottom: 1.9rem;
 }
 
 .socials-wrapper3 {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .apps {
   display: flex;
@@ -698,24 +716,26 @@ button {
 
 .socials-footer {
   display: flex;
-  gap: 10px;
+  gap: 17px;
 }
-
+.socials-footer a img {
+  /* width: 100%;
+  height: 100%; */
+}
 .logo-footer {
-  margin-right: 3.875rem;
+  margin-right: 3.675rem;
 }
 
 .payment-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding-top: 1.25rem;
+  padding-top: 0.95rem;
   padding-bottom: 4rem;
 }
 
 .payment-one {
   display: flex;
-  gap: 40px;
+  gap: 44px;
 }
 .politics-text {
   color: rgb(93, 108, 123);
@@ -724,9 +744,15 @@ button {
   line-height: 17px;
 }
 
+.payment-two {
+  margin-left: 23.7rem;
+}
+
 .payment-three {
   display: flex;
   align-items: center;
+  margin-right: 11px;
+  margin-left: auto;
 }
 
 .payment-three span {
