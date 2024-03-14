@@ -335,8 +335,10 @@ header {
 }
 .scooters-title {
   margin: 0 auto;
-  margin-bottom: 3.3625rem;
+  margin-bottom: 3.0625rem;
   text-align: center;
+  padding-top: 4px;
+  margin-right: 11px;
 }
 .scooter-cards {
   display: flex;
@@ -380,7 +382,7 @@ header {
   line-height: 17px;
   border-radius: 5px;
   background: #75d14a;
-  padding: 4px 8px;
+  padding: 4px 9px;
   position: absolute;
   margin: 10px;
   color: #fff;
