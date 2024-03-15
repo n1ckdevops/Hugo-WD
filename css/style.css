@@ -100,6 +100,8 @@ input:focus {
 }
 
 .button__catalog {
+  width: 114px;
+  height: 40px;
   font-size: 16px;
   font-weight: 400;
   line-height: 23px;
@@ -769,5 +771,97 @@ header {
 @media (max-width: 1440px) {
   .header__bg {
     width: 100%;
+  }
+}
+
+@media (max-width: 1240px) {
+  .container {
+    width: 93%;
+  }
+  .hidden1240 {
+    display: none;
+  }
+
+  .search__container {
+    width: 100%;
+  }
+  .search__container input {
+    width: 100%;
+  }
+  .second-wrapper {
+    align-items: center;
+    gap: 10px;
+  }
+  .second-wrapper.third-wrapper {
+    column-gap: 20px;
+  }
+  .second-title {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .section-title {
+    font-size: 1.875rem;
+    line-height: 2.3875rem;
+  }
+  .flex-one {
+    flex: 1;
+  }
+  .section-two__bg {
+    width: 515px;
+    height: 422px;
+  }
+  .scooters {
+    margin-top: 4.25rem;
+    margin-bottom: 4.25rem;
+  }
+  .scooters-title {
+    margin-bottom: 1.5625rem;
+  }
+  .scooter-cards {
+    display: flex;
+    gap: 1.0125rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .cta-button {
+    position: relative;
+    z-index: 2;
+  }
+  .cta-bg {
+    right: 0;
+    z-index: 1;
+  }
+  .email-form {
+    margin-right: 0px;
+    display: flex;
+  }
+  .email-form input {
+    width: 100%;
+    flex: 1;
+  }
+  .payment-wrapper {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .payment-two {
+    margin-left: 0;
+    flex: 0.3 1 auto;
+  }
+  .payment-one {
+    display: unset;
+    flex: 3 1 auto;
+  }
+  .payment-three {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    margin-left: 0;
+    flex: 0 1 auto
+
+}
+}
+@media (max-width: 992px) {
+  .cta-bg {
+    display: none;
   }
 }
