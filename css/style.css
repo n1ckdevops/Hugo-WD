@@ -1,3 +1,6 @@
+html {
+  font-size: 1rem;
+}
 * {
   box-sizing: border-box;
   text-decoration: none;
@@ -6,6 +9,9 @@
 
 body {
   font-family: "Jost", sans-serif;
+}
+.show-992 {
+  display: none;
 }
 .main-container {
   max-width: 90rem;
@@ -46,7 +52,6 @@ input:focus {
   display: flex;
   gap: 0.5rem;
 }
-
 
 .navbar__link {
   color: rgb(93, 108, 123);
@@ -580,6 +585,7 @@ header {
 }
 .discount-wrapper {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -683,13 +689,6 @@ header {
   font-weight: 500;
   line-height: 17px;
 }
-
-/* .socials-wrapper {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 2.2813rem;
-  padding-bottom: 2.6rem;
-} */
 
 .main-container2 {
   max-width: 90rem;
@@ -827,7 +826,7 @@ header {
     display: flex;
   }
   .email-form input {
-    width: 100%;
+    width: 264px;
     flex: 1;
   }
   .payment-wrapper {
@@ -847,16 +846,203 @@ header {
     align-items: center;
     margin-right: 0;
     margin-left: 0;
-    flex: 0 1 auto
-
-}
+    flex: 0 1 auto;
+  }
 }
 @media (max-width: 992px) {
-  .cta-bg {
+  .hidden-992 {
     display: none;
+  }
+  .show-992 {
+    display: inline;
   }
   .section {
     margin-top: 3rem;
+    margin-bottom: 3rem;
   }
-  
+  .section-title {
+    font-size: 25px;
+  }
+  .cta-bg {
+    display: none;
+  }
+  .socials-wrapper2 {
+    display: block;
+  }
+  .cta-wrapper {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .cta {
+    height: auto;
+  }
+  .politics-text {
+    margin-right: 20px;
+  }
+  .search__container,
+  .search__container input {
+    width: 346px;
+  }
+  .wrapper__search {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .extra__icons {
+    margin-left: 0;
+  }
+  header {
+    margin-top: 1.5rem;
+  }
+  .header__bg {
+    height: 84%;
+  }
+  .wrapper__header {
+    padding-top: 30px;
+  }
+  .search {
+    margin-top: 0.875rem;
+  }
+  .second {
+    margin-top: 0;
+  }
+  .second-wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .second-wrapper.third-wrapper {
+    flex-direction: column-reverse;
+  }
+  .second-title {
+    text-align: center;
+  }
+  .payment-wrapper {
+    padding-bottom: 1rem;
+  }
+  .discount-title {
+    flex: 1 1 auto;
+    max-width: unset;
+    text-align: center;
+  }
+  .email-form {
+    flex: 1 1 auto;
+  }
+  .ul-customers,
+  .ul-contacts {
+    columns: unset;
+  }
+  .footer-column:nth-child(2) {
+    margin-left: 0;
+  }
+  .discount-wrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .ul-catalog li,
+  .ul-customers li,
+  .ul-contacts li {
+    line-height: 10px;
+  }
+  .socials-wrapper3 {
+    flex-wrap: wrap;
+  }
+  .apps {
+    margin-bottom: 12px;
+  }
+  .payment-one {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar__menu {
+    gap: 0.9rem;
+  }
+  .section-title {
+    font-size: 1.25rem;
+    line-height: 1.4875rem;
+  }
+
+  .header-button {
+    width: 100%;
+  }
+  .header__bg {
+    display: none;
+  }
+  .section-two__bg {
+    background-size: contain;
+    max-width: 100%;
+  }
+  .section-two__bg2 {
+    background-size: contain;
+    max-width: 100%;
+  }
+  .test-drive__item {
+    line-height: 22px;
+  }
+  .second-title {
+    margin: 20px 0;
+  }
+  .second {
+    margin-bottom: 2rem;
+  }
+  header {
+    height: 25rem;
+    background: -webkit-linear-gradient(
+      296deg,
+      #9251a1,
+      #305690,
+      #970eaf
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      296deg,
+      #9251a1,
+      #305690,
+      #970eaf
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px;
+    margin-bottom: 3rem;
+  }
+  .container.container-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .wrapper__header {
+    padding-top: 3.6625rem;
+  }
+}
+@media (max-width: 663px) {
+  .cta-input {
+    margin-bottom: 15px;
+  }
+  }
+@media (max-width: 576px) {
+  .second-title {
+    margin-top: 0;
+  }
+  .test-drive__item {
+    font-size: 14px;
+    line-height: 15px;
+  }
+  .section-two__bg {
+    width: 100%;
+    height: 286px;
+  }
+  .section-two__bg2 {
+    width: 100%;
+    height: 313px;
+    background-position: center center;
+  }
+  .ul-name {
+    font-size: 1.05rem;
+  }
+  .second-title {
+    margin: 10px 0;
+  }
+  .scooters {
+    margin-top: 0;
+  }
+  .email-form input {
+    margin-bottom: 15px;
+  }
 }
