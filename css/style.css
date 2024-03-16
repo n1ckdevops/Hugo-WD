@@ -47,8 +47,7 @@ input:focus {
   gap: 0.5rem;
 }
 
-.navbar__icon {
-}
+
 .navbar__link {
   color: rgb(93, 108, 123);
   font-size: 0.75rem;
@@ -490,10 +489,7 @@ header {
   background: rgb(244, 247, 251);
   margin-bottom: 100px;
 }
-.cta,
-.cta * {
-  /* border: 1px solid red; */
-}
+
 .cta-title {
   max-width: 38.3125rem;
   margin-bottom: 2.1rem;
@@ -674,8 +670,7 @@ header {
 .footer-column:nth-child(2) {
   margin-left: 29px;
 }
-.footer-column:nth-child(3) {
-}
+
 .ul-contacts a {
   color: rgb(40, 39, 57);
   font-size: 1rem;
@@ -721,10 +716,6 @@ header {
 .socials-footer {
   display: flex;
   gap: 17px;
-}
-.socials-footer a img {
-  /* width: 100%;
-  height: 100%; */
 }
 .logo-footer {
   margin-right: 3.675rem;
