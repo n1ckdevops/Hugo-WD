@@ -855,4 +855,8 @@ header {
   .cta-bg {
     display: none;
   }
+  .section {
+    margin-top: 3rem;
+  }
+  
 }
