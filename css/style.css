@@ -760,6 +760,82 @@ header {
 .payment-three img {
   margin-left: 14px;
 }
+
+/* MODAL */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 40px;
+  border: 1px solid #888;
+  width: 790px;
+  border-radius: 5px;
+  gap: 9px;
+}
+
+.close {
+  position: absolute;
+  top: -1px;
+  right: 12px;
+  color: #aaa;
+  float: right;
+  font-size: 39px;
+  font-weight: 200;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.wrapper-modal-one {
+  flex: 1;
+}
+.wrapper-modal-two {
+  background-image: url(../img/modal-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  width: 21.0625rem;
+  height: 30.6875rem;
+  overflow: hidden;
+}
+
+.modal-button,
+.modal-input {
+  width: 264px;
+}
+.modal-input {
+  margin-bottom: 17px;
+}
+
+.politics-modal a {
+  color: #6f73ee;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.politics-modal {
+  max-width: 16.9375rem;
+}
+
 @media (max-width: 1440px) {
   .header__bg {
     width: 100%;
@@ -953,6 +1029,12 @@ header {
   .payment-one {
     margin-bottom: 10px;
   }
+  .modal-content {
+    width: 70%;
+  }
+  .wrapper-modal-two {
+    display: none;
+  }
 }
 @media (max-width: 768px) {
   .navbar__menu {
@@ -1090,7 +1172,8 @@ header {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
-  .search__container, .search__container input {
+  .search__container,
+  .search__container input {
     width: 100%;
   }
   .search__input {
@@ -1101,6 +1184,9 @@ header {
   }
   .navbar__menu {
     flex-wrap: wrap;
-    justify-content:center
+    justify-content: center;
+  }
+  .modal-content {
+    width: 90%;
   }
 }

@@ -158,7 +158,7 @@
                 >
               </li>
             </ul>
-            <button class="header-button">Записаться</button>
+            <button class="header-button" id="openModalBtn">Записаться</button>
           </div>
         </div>
       </header>
@@ -624,6 +624,42 @@
           </div>
         </div>
       </footer>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="wrapper-modal-one">
+          
+        <h2 class="section-title modal-title">Запишитесь на тест-драйв электросамоката</h2>
+        <span>и подберите модель для себя</span>
+        <p class="modal-text">
+          Менеджер свяжется с вами в течение 5 минут, чтобы согласовать время.
+        </p>
+        <span class="modal-text2"> Как с вами удобнее связаться? </span>
+        <form action="#" class="cta-form">
+          <input
+            type="text"
+            class="cta-input phone-mask modal-input"
+            placeholder="+ 7 ( _ _ _ ) _ _ - _ _ - _ _ "
+          />
+          <button class="cta-button modal-button">Оформить предзаказ</button>
+        </form>
+        <div class="politics">
+          <label>
+            <input type="checkbox" class="checkbox-input" />
+
+            <span class="custom-checkbox"></span>
+          </label>
+          <span class="politics-text politics-modal"
+            >Нажимая на кнопку, вы соглашаетесь на обработку персональных данных
+            и <a href="#" class="modal-politics">политикой конфиденциальности</a></span
+          >
+        </div>
+        </div>
+        <div class="wrapper-modal-two ">
+          
+        </div>
+        <span class="close">&times;</span>
+      </div>
     </div>
     <script src="js/main.js"></script>
   </body>
