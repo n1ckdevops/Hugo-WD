@@ -73,16 +73,28 @@ var modal = document.getElementById("myModal");
 var btn = document.getElementById("openModalBtn");
 var span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function () {
+btn.onclick = function() {
   modal.style.display = "block";
-};
+  document.body.classList.add("modal-open");
+}
 
-span.onclick = function () {
-  modal.style.display = "none";
-};
+span.onclick = function() {
+  closeModal();
+}
 
-window.onclick = function (event) {
+window.onclick = function(event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+    closeModal();
   }
-};
+}
+
+window.onkeydown = function(event) {
+  if (event.key === "Escape") {
+    closeModal();
+  }
+}
+
+function closeModal() {
+  modal.style.display = "none";
+  document.body.classList.remove("modal-open");
+}

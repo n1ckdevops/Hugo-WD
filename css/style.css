@@ -779,8 +779,9 @@ header {
   position: relative;
   display: flex;
   background-color: #fefefe;
-  margin: 15% auto;
+  margin: auto;
   padding: 40px;
+  margin-top: 10.3125rem;
   border: 1px solid #888;
   width: 790px;
   border-radius: 5px;
